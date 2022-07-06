@@ -108,7 +108,6 @@ def main():
     quantized_model = torch.quantization.quantize_dynamic(model,
                                                           {torch.nn.Linear},
                                                           dtype=torch.qint8)
-
     print("=" * 75)
     print("Model Sizes")
     print("=" * 75)
